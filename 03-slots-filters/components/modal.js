@@ -25,6 +25,6 @@ Vue.component('modal-bootstrap', {
   methods: {
     CloseModal(){
       $('#modalSlot').modal('hide');
-    }
+    },
   }
   })

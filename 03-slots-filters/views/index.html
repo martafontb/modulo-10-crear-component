@@ -21,7 +21,9 @@
     <modal-bootstrap>
       <div slot="header">Hola Mundo</div>
       <h3>Cambio de Moneda</h3>
-      <input type="text" v-model="euros">
+      <input type="text" v-model="euros" @input="Change($event)"
+      @change="Change($event)">
+      <div class="text-danger" v-if="!isValid">caracter invalido</div>
       <p>El cambio de {{euros}}€ en dolares son {{ euros | toUSD }}</p>
       <div slot="footer">
       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @click="CloseModal">Cerrar</button>
