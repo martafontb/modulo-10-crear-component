@@ -12,9 +12,11 @@ Vue.component('modal-bootstrap', {
           <slot name="header"></slot> 
           <button type="button" class="btn-close" data-bs-dismiss="modal" @click="CloseModal"> x </button>
         </div>
+
         <div class="modal-body">
-          <slot></slot>
+          <slot></slot>       
         </div>
+
         <div class="modal-footer">
         <slot name="footer"></slot>
         </div>
